@@ -3,8 +3,118 @@
 <head>
 <meta charset="UTF-8">
 <title>Flexbox1316</title>
-</head>
+
+	<style>
+		#myheader{
+		padding: 40px; background-color: maroon
+		}
+		
+		
+		.flex-container {display: flex;
+		background-color: maroon;flex-direction: row;justify-content: center;align-items: center} 
+	
+	.flex-container > div {
+  background-color: lightgray;
+  margin: 10px;
+  padding: 20px;
+  font-size: 15px;
+}
+	@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+		body {background-color: lightgray}
+	</style>
+	
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+	
+	<script>
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+  </script>
+	
+	
+	
+	
+	
+	
+	
+	
+	</head>
+	
+	
 
 <body>
-</body>
+<h4 id="myheader" style="text-align: center;font-size: 25px"> </h4>
+	
+	
+	<h1 style="text-align:center;font-size:40px"> 
+	
+	Gearhead Garage </h1>
+	
+	<div class="flex-container">
+<img src="images/GearHead.png" alt="banner of tools" width="100%" height="50%">
+	</div>
+	
+	<h3 style="text-align: center;font-size: 30px"> Check out some of our Reviews! </h3>
+	<div  class="flex-container">  
+	<div> GearHead Garage is Fast and Reliable <br> -Thomas Garcia </div>
+		<div> They saved me money and time! <br> - Kellie Green </div>
+	<div> Reasonably Priced Services!<br> - Easton Allen </div>
+	<div> You wont regret using them! <br> - Caleb Mitchell </div>
+	
+	
+	</div>
+	
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<p style="text-align: center; font-size: 35px"> Here are some of our frequently asked questions </p>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div id="accordion">
+  <h3>How do I book a consultation?</h3>
+  <div>
+    <p>
+  Give us a call and one of our employess would be happy to book with you! 
+    </p>
+  </div>
+  <h3>Do you give military or first responder discounts?</h3>
+  <div>
+    <p>
+    Yes! Mention your status during your consultation. 
+    </p>
+  </div>
+  <h3>Do you offer payment plans?</h3>
+  <div>
+    <p>
+  Yes we do!  
+    </p>
+    <ul>
+      <li>Pay in 4 </li>
+      <li>Pay in 2 </li>
+      <li>Pay in full</li>
+    </ul>
+  </div>
+  <h3>Are you open on the weekends?</h3>
+  <div>
+    <p>
+   Yes we are open 7 Days a Week!
+    </p>
+</div>
+	</div>
+	</body>
 </html>
